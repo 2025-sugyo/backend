@@ -45,11 +45,11 @@ jobs:
             docker build -t sugyo-backend:latest .
             
             # 기존 컨테이너 교체
-            docker stop springboot-app || true
-            docker rm springboot-app || true
+            docker stop spring-app || true
+            docker rm spring-app || true
             
             docker run -d \
-              --name springboot-app \
+              --name spring-app \
               --network infra_infra-network \
               --env-file /home/ubuntu/infra/.env \
               --restart unless-stopped \
