@@ -50,7 +50,7 @@ jobs:
             
             docker run -d \
               --name springboot-app \
-              --network infra_app-network \
+              --network infra_infra-network \
               --env-file /home/ubuntu/infra/.env \
               --restart unless-stopped \
               -p 8081:8080 \
