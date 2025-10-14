@@ -1,4 +1,4 @@
-package com.sugyo;
+package store.sugyo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

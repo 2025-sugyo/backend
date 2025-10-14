@@ -40,4 +40,4 @@ springdoc:
 logging:
     level:
         root: INFO
-        com.sugyo: DEBUG
+        store.sugyo: DEBUG
