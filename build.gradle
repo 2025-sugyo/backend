@@ -32,6 +32,7 @@ dependencies {
     // Infrastructure
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.mysql:mysql-connector-j'
+    implementation 'io.awspring.cloud:spring-cloud-aws-starter-s3:3.1.1'
 
     // Utility
     annotationProcessor 'org.projectlombok:lombok'
@@ -43,6 +44,9 @@ dependencies {
 
     // Swagger/OpenAPI
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9'
+
+    // detect MIME Type(파서 없음)
+    implementation 'org.apache.tika:tika-core:3.2.2'
 }
 
 tasks.named('test') {
